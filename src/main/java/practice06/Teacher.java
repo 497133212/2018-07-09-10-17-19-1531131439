@@ -18,11 +18,10 @@ public class Teacher extends Person {
     }
 
     public String introduce() {
-        Person person = new Person("Tom", 21);
         if(this.klass == null) {
-            return person.introduce() + " I am a Teacher. I teach No Class.";
+            return super.introduce() + " I am a Teacher. I teach No Class.";
         } else {
-            return person.introduce() + " I am a Teacher. I teach Class " + this.klass + ".";
+            return super.introduce() + String.format(" I am a Teacher. I teach Class %s.", this.klass);
         }
     }
 }
