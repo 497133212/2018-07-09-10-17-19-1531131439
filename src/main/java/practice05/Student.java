@@ -17,7 +17,6 @@ public class Student extends Person{
     }
 
     public String introduce() {
-        Person person = new Person("Tom", 21);
-        return person.introduce() + " I am a Student. I am at Class " + klass + ".";
+        return super.introduce() + String.format(" I am a Student. I am at Class %s.", this.klass);
     }
 }
