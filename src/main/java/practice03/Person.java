@@ -18,7 +18,6 @@ public class Person {
     }
 
     public String introduce() {
-        String str = "My name is " + name + ". I am " + age + " years old.";
-        return str;
+        return String.format("My name is %s. I am %s years old.",this.name,this.age);
     }
 }
